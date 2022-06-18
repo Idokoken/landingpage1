@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* header section */
+header{
+    display: flex;
+    box-shadow: 3px 0px 8px  #606064;
+    border: 1px solid white;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+header .brand {
+    flex:12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav {
+    flex: 12;
+}
+header .brand img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+header .brand h3 {
+    font-size: 25px;
+    color: #00A;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li {
+    margin-right: 30px;
+    
+}
+header nav ul li a{
+   text-decoration: none;
+    font-size: 20px;
+    color:#00A;
+}
+ .active{
+    color: rgb(179, 187, 73);
+}
+header nav ul li a:hover{
+    font-weight: 600;
+    color:rgb(96, 96, 116);
+}
+/* main section */
+main {
+  margin-top: 10px;  
+}
+.hero {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../assets/hero.jpg');
+    background-size: 100%;
+    
+}
+.text{
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.6;
+}
+.hero h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.6;
+    
+}
+.contents::before { 
+    display: block; 
+    content: " "; 
+    margin-top: 80px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+.contents {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+/* footer section */
+footer{
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color:  rgb(206, 218, 206);
+}
+.footerBrand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0; 
+}
+.footerBrand img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.footerItem{
+    flex: 50%;
+    margin: 0;
+    padding: 0;
+}
+.footerTitle {
+    color:#00A;
+    font-size: 20px;
+}
+/* medium screen */
+ @media only screen and (min-width: 768px) {
+    header .brand {
+        flex:4;
+    }
+    header nav {
+        flex:8;
+    }
+    .hero {
+        height: 400px;
+    }
+    .footerItem{
+        flex: 25%
+    }
+    }
+/* large screen */
+ @media only screen and (min-width: 1024px) {
+    
+    } 
